@@ -33,4 +33,9 @@ class Complejo
     img_div = (@imaginario * other.real - @real * other.imaginario)
     Complejo.new(real_div/divisor,img_div/divisor)
   end
+  
+  def **(scalar)
+    return Complejo.new(@real * scalar, @imaginario * scalar) if scalar.is_a? Numeric
+    #return Complejo.new(@real *  scalar.real, @imaginario *  scalar.imaginario) if scalar.is_a? Complejo
+  end
 end
