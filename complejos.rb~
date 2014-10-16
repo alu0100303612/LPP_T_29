@@ -1,0 +1,24 @@
+
+class Fraccion
+  attr_accessor :real
+  attr_accessor :imaginario
+  
+  def initialize(n_real, n_imaginario)
+    #Excepciones
+    raise ArgumentError, 'La parte real no es un número' unless numeradorI.is_a? Numeric
+    
+    #Gestionar los simbolos
+    /*if ((numeradorI < 0) and (denominadorI < 0))
+    numeradorI = - numeradorI
+    denominadorI = - denominadorI
+    elsif ((numeradorI > 0) and (denominadorI < 0))
+    numeradorI = - numeradorI
+    denominadorI = - denominadorI
+    end
+    minimizar numeradorI, denominadorI*/
+  end
+  
+  def to_s
+  return "#@real i #@imaginario"
+  end
+end
