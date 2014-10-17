@@ -33,8 +33,6 @@ class Test_Complejos < Test::Unit::TestCase
   def test_escalar
     @x = @x ** 2
     assert (@x.real == 4 and @x.imaginario == 4)
-    #@x = @x ** @y
-    #assert (@x.real == 2 and @x.imaginario == 6)
   end
   
   def test_parametros
